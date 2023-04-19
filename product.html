@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="tel:+"
+                ><i
+                  class="fa-sharp fa-solid fa-phone me-2"
+                  style="color: #489140"
+                ></i
+                >380 63 886 86 10</a
+              >
+            </div>
+            <div class="col icons text-end">
+              <form id="search">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Пошук..."
+                    aria-label="Пошук..."
+                  />
+                  <button class="btn close-search" type="button">
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                  </button>
+                  <button class="btn" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+              <a href="#" class="open-search"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="cart-modal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Кошик</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table text-start">
+                        <thead>
+                          <tr>
+                            <th scope="col">Фото</th>
+                            <th scope="col">Товар</th>
+                            <th scope="col">Кількість</th>
+                            <th scope="col">Ціна</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="#"
+                                ><img
+                                  src="./img/cement-pc-i-500-25kg.jpeg"
+                                  alt=""
+                              /></a>
+                            </td>
+                            <td>Цемент на 25кг</td>
+                            <td>2</td>
+                            <td>610грн</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="#"
+                                ><img
+                                  src="./img/cement-pc-i-500-25kg.jpeg"
+                                  alt=""
+                              /></a>
+                            </td>
+                            <td>Цемент на 25кг</td>
+                            <td>2</td>
+                            <td>610грн</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="#"
+                                ><img
+                                  src="./img/cement-pc-i-500-25kg.jpeg"
+                                  alt=""
+                              /></a>
+                            </td>
+                            <td>Цемент на 25кг</td>
+                            <td>2</td>
+                            <td>610грн</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Продовжити покупку
+                      </button>
+                      <button type="button" class="btn btn-warning">
+                        Оформити замовлення
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="open-cart-modal" href=""
+                ><i class="fa-regular fa-heart"></i
+              ></a>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cart-modal"
+                class="open-cart-modal"
+                ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+                ><span class="badge rounded-pill text-dark count-cart"
+                  >3</span
+                ></a
+              >
+              <div class="dropdown d-inline-block">
+                <a
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  ><i class="fa-solid fa-user"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Авторизуватись</a></li>
+                  <li><a class="dropdown-item" href="#">Зареструватись</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Heder_bootom -->
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid p-0">
+              <a class="navbar-brand logo" href="#">Моноліт</a>
+              <button
+                class="navbar-toggler border border-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#"
+                      >Цемент</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Пісок</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link text-light dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Краска
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Водомисионка</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Машинаная</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Категории</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-4 order-md-2">
+          <h1>Цемент</h1>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success"></i> В наличии</li>
+            <li><i class="fas fa-shipping-fast text-muted"></i> Ожидаеться</li>
+            <li><i class="fas fa-hand-holding-usd"></i> 260 грн</li>
+          </ul>
+          <div id="product">
+            <div class="input-group mb-3">
+                <input type="text" placeholder="Кількість" class="form-control" >
+                <button class="btn btn-warning" type="button" id="button-addon2">Купить</button>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <ul class="thumbnails list-unstyled clearfix">
+            <li class="thumb-mail text-center">
+              <a
+                data-effect="mfp-zoom-in"
+                class="thumbnail"
+                href="https://demo.opencart.ua/image/cache/catalog/demo/iphone_1-500x500.jpg"
+                title="iPhoned"
+                ><img
+                  src="https://demo.opencart.ua/image/cache/catalog/demo/iphone_1-228x228.jpg"
+                  title="iPhone"
+                  alt="iPhone"
+              /></a>
+            </li>
+            <li class="image-additional">
+              <a
+                data-effect="mfp-zoom-in"
+                class="thumbnail"
+                href="https://demo.opencart.ua/image/cache/catalog/demo/iphone_6-500x500.jpg"
+                title="iPhone"
+              >
+                <img
+                  src="https://demo.opencart.ua/image/cache/catalog/demo/iphone_6-74x74.jpg"
+                  title="iPhone"
+                  alt="iPhone"
+              /></a>
+            </li>
+            <li class="image-additional">
+              <a
+                data-effect="mfp-zoom-in"
+                class="thumbnail"
+                href="https://demo.opencart.ua/image/cache/catalog/demo/iphone_2-500x500.jpg"
+                title="iPhone"
+              >
+                <img
+                  src="https://demo.opencart.ua/image/cache/catalog/demo/iphone_2-74x74.jpg"
+                  title="iPhone"
+                  alt="iPhone"
+              /></a>
+            </li>
+            <li class="image-additional">
+              <a
+                data-effect="mfp-zoom-in"
+                class="thumbnail"
+                href="https://demo.opencart.ua/image/cache/catalog/demo/iphone_5-500x500.jpg"
+                title="iPhone"
+              >
+                <img
+                  src="https://demo.opencart.ua/image/cache/catalog/demo/iphone_5-74x74.jpg"
+                  title="iPhone"
+                  alt="iPhone"
+              /></a>
+            </li>
+            <li class="image-additional">
+              <a
+                data-effect="mfp-zoom-in"
+                class="thumbnail"
+                href="https://demo.opencart.ua/image/cache/catalog/demo/iphone_3-500x500.jpg"
+                title="iPhone"
+              >
+                <img
+                  src="https://demo.opencart.ua/image/cache/catalog/demo/iphone_3-74x74.jpg"
+                  title="iPhone"
+                  alt="iPhone"
+              /></a>
+            </li>
+            <li class="image-additional">
+              <a
+                data-effect="mfp-zoom-in"
+                class="thumbnail"
+                href="https://demo.opencart.ua/image/cache/catalog/demo/iphone_4-500x500.jpg"
+                title="iPhone"
+              >
+                <img
+                  src="https://demo.opencart.ua/image/cache/catalog/demo/iphone_4-74x74.jpg"
+                  title="iPhone"
+                  alt="iPhone"
+              /></a>
+            </li>
+          </ul>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Описание
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Характеристики
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                facilis, quas nisi sint amet consequuntur, hic eum asperiores
+                laborum perspiciatis praesentium delectus deleniti vero, nemo
+                odio quisquam minima? Nam, nostrum. Ut sint vel quae a quam
+                quidem fuga voluptatibus placeat amet quibusdam quis ipsam nam
+                vero sequi soluta facere, voluptatum quod quas totam incidunt!
+                Voluptatibus debitis explicabo pariatur dignissimos fuga? Autem
+                porro sunt optio, dignissimos nostrum placeat consequuntur
+                repellendus cumque eius facere est suscipit sapiente expedita
+                dolores veniam. Fugiat tempora molestiae rerum iure tenetur
+                recusandae animi ullam possimus. Voluptatum, in. Rerum qui
+                recusandae similique? Dolore ea error omnis quibusdam quae
+                reprehenderit quis amet facilis deleniti? Ullam perferendis eius
+                at, architecto molestias veritatis in, provident commodi unde
+                recusandae ad laborum possimus. Doloribus error consequuntur
+                vitae blanditiis officiis nulla in tenetur corrupti maxime
+                aperiam velit id aliquid repellat mollitia earum voluptatem
+                unde, cupiditate enim expedita veritatis tempora aliquam
+                inventore fuga consectetur. Error? Adipisci sunt, assumenda a
+                modi quasi, tempora magni aliquam voluptatibus optio culpa non
+                vel sed necessitatibus ut natus dignissimos corrupti, aspernatur
+                recusandae ducimus! Laboriosam repellat earum consequatur
+                asperiores debitis voluptatibus! Neque, molestiae. Nesciunt
+                assumenda ea mollitia quaerat dolorem optio? Id, eos vel.
+                Aliquid ex tenetur enim repellat fugit sit, illum laborum error
+                nemo excepturi necessitatibus modi, id maiores saepe beatae.
+                Tempore ipsum et voluptatibus autem vitae temporibus delectus ea
+                deserunt distinctio, nobis explicabo sint? Eos, iure quos aut
+                cum ipsum omnis veniam debitis vel at autem asperiores modi
+                dolores doloremque! Cum quae eum id ipsam non amet iusto quos
+                voluptas consequuntur. Adipisci sapiente obcaecati perferendis,
+                amet consectetur laboriosam, eos, rerum itaque assumenda soluta
+                consequuntur. Deleniti tempore aperiam libero vitae praesentium.
+                Debitis, repudiandae natus mollitia praesentium dolore
+                asperiores illum doloremque nemo repellendus, porro officiis
+                sequi facere sit consequuntur reiciendis, aspernatur
+                dignissimos! Repellat dolor quibusdam incidunt ducimus quae cum
+                nobis consequuntur quas?
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h4>Информация</h4>
+              <ul class="list-unstyled text-center text-sm-start">
+                <li><a href="">Головна</a></li>
+                <li><a href="">О магазине</a></li>
+                <li><a href="">Оплата и Доставка</a></li>
+                <li><a href="">Гарантия</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Время работы</h4>
+              <ul class="list-unstyled text-center text-sm-start">
+                <li>г. Измали ул Пур 10</li>
+                <li>пн-вс: 9:00 - 18:00(Без перерива)</li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Контакты</h4>
+              <ul class="list-unstyled text-center text-sm-start">
+                <li><a href="tel:+380638868610">380 63 886 86 10</a></li>
+                <li>
+                  <a href="mailto:ppvr3407@gmail.com">ppvr3407@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Соц сети</h4>
+              <ul class="list-unstyled text-center text-sm-start">
+                <li><a href="tel:+380638868610">380 63 886 86 10</a></li>
+                <li>
+                  <a href="mailto:ppvr3407@gmail.com">ppvr3407@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <button id="top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- Скрипты -->
+    <script
+      src="https://kit.fontawesome.com/5b25bdb854.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+/* Начало стилей */
+a {
+  text-decoration: none;
+  color: #ff8800;
+  transition: all 0.5s;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.5s;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-color: #df7b08;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+  min-width: 320px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 50px 0;
+}
+.section-tittle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-tittle::before {
+  margin-right: 10px;
+}
+.section-tittle::after {
+  margin-left: 10px;
+}
+.section-tittle::after,
+.section-tittle::before {
+  content: " ";
+  display: block;
+  box-sizing: border-box;
+  width: 10%;
+  height: 1px;
+  background-color: #ff8800;
+}
+/* Header Top */
+.header-top {
+  background-color: white;
+  position: relative;
+}
+.header-top .fa-solid {
+  font-size: 18px;
+}
+#search {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+  transform: scale(0);
+  display: flex;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+.active {
+  transform: scale(1) !important;
+}
+#search .form-control {
+  border-radius: 0;
+}
+#cart-modal .modal-header {
+  border-bottom: none;
+}
+#cart-modal .modal-footer {
+  border-top: none;
+}
+.header-top .icons a {
+  padding: 10px;
+}
+
+.open-cart-modal {
+  position: relative;
+}
+.count-cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  background-color: rgb(251, 255, 240);
+}
+.modal-body img {
+  max-width: 50px;
+}
+.header-bottom {
+  background-color: #df7b08;
+  padding: 15px 0 10px 0;
+}
+.navbar-toggler-icon {
+  background-image: url("../img/menu_icon.svg");
+}
+.logo {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+}
+.nav-item a {
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem;
+}
+
+/* Слайдер */
+.carousel-item img {
+  max-height: 400px;
+  object-fit: fill;
+}
+/* Карточка товара */
+.produc-cart {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+}
+.produc-cart:hover {
+  box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+.produc-cart .product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 10px;
+}
+
+.produc-cart .product-image img {
+  max-height: 100%;
+}
+
+.produc-cart .produc-details {
+  padding: 15px 15px 0 15px;
+}
+.produc-cart .produc-details h4 a {
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  height: 50px;
+}
+.produc-cart .produc-details p {
+  font-size: 15px;
+  margin-bottom: 18px;
+  color: #999;
+  height: 50px;
+  overflow: hidden;
+}
+.product-botom-details {
+  padding: 15px 15px;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+}
+.produc-price {
+  font-size: 18px;
+  color: #ee6e73;
+  font-weight: 600px;
+}
+.produc-price small {
+  color: #ccc;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+.product_links {
+  font-size: 20px;
+  margin-right: 10px;
+}
+/* Footer */
+footer {
+  background-color: #343434;
+}
+.footer h4 {
+  text-align: center;
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 8px;
+}
+.footer a,
+footer li {
+  display: block;
+  color: #c8c8c8;
+}
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+#top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border: none;
+  font-size: 30px;
+  background-color: #df7b08;
+  opacity: 0.5;
+  display: none;
+  z-index: 10;
+}
+#top:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/* Страница Категории */
+.sidebar-toogler {
+  display: none;
+}
+.sidebar-toogler button {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+.sidebar-toogler button:hover {
+  border: none;
+  box-shadow: none;
+}
+.sidebar .active {
+  background-color: #df7b08;
+  border: #999;
+}
+.sidebar .show {
+  transform: scale(1);
+  display: block;
+  transition: all 0.5s;
+}
+
+/* Старница продукта */
+.thumbnails .thumb-mail {
+  border: 1px solid #6e6d6d;
+  border-radius: 4px;
+}
+.thumbnails .thumb-mail img {
+  max-width: 300px;
+}
+.thumbnail img {
+  padding: 4px;
+}
+.image-additional img {
+  padding: 4px;
+}
+.thumbnails .image-additional {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #df7b08;
+  border-radius: 4px;
+}
+
+/* Попап */
+/* 
+
+====== Zoom effect ======
+
+*/
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.nav-tabs .nav-link{
+  color: #555;
+}
+
+
+@media (max-width: 405px) {
+  .header-top .icons a {
+    padding: 1px;
+    font-size: 16px;
+  }
+  .count-cart {
+    font-size: 8px;
+    top: -8px;
+    right: -3px;
+  }
+  .header-top .fa-solid {
+    font-size: 16px;
+  }
+  .thumbnails .thumb-mail img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 991px) {
+  .produc-cart .product-image {
+    height: 100px;
+  }
+  .sidebar-toogler {
+    display: block;
+  }
+  .sidebar-tooggle {
+    display: none;
+    transform: scale(0);
+  }
+}
